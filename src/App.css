@@ -1,0 +1,95 @@
+/* Genel Sayfa Yapısı */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  transition:  0.8s ease; /* Arka plan geçişi yumuşak olur */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Dinamik Arka Plan Görselleri */
+.app-container.default { 
+  background-image:  url('../public/sunny.jpg ');
+}
+.app-container.sunny { 
+  background-image:  url('../public/sunny.jpg '); 
+}
+.app-container.rainy { 
+  background-image:  url('../public/rain.jpg'); 
+}
+.app-container.snowy { 
+  background-image:  url('../public/snow.jpg'); 
+}
+.app-container.clouds { 
+  background-image: url('../public/cloud.jpg'); 
+}
+
+/* Header Tasarımı */
+header {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Content & Arama Kutusu */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 12px 20px;
+  border-radius: 25px 0 0 25px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px 25px;
+  border-radius: 0 25px 25px 0;
+  border: none;
+  background-color: #ff7e5f;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+button:hover { background-color: #feb47b; }
+
+/* Hava Durumu Kartı */
+.weather-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.error-msg { background: rgba(255, 0, 0, 0.4); padding: 10px; border-radius: 10px; }
+
+/* Footer */
+footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+}
