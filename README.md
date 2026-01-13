@@ -17,7 +17,7 @@ Bu proje, OpenWeatherMap API kullanarak anlık hava durumu verilerini çeken bir
 3. `npm start` komutu ile uygulamayı başlatın.;
 
 ## Ekran Görüntüsü
-1. asdasd
+1. ![alt text](<ReadMe.png>)
 
 teşekkürler 
 Ennur Doğan - 2210780025
